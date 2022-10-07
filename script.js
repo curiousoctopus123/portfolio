@@ -4,7 +4,7 @@ let currentPersona = 1
 function selectInterview(number) {
   document.getElementById(`interview-${currentInterview}`).style.display = 'none';
   currentInterview = number
-  document.getElementById(`interview-${currentInterview}`).style.display = 'block';
+  document.getElementById(`interview-${currentInterview}`).style.display = 'flex';
 }
 
 function selectPersona(persona) {
