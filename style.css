@@ -79,6 +79,7 @@ div.storyboard {
 
 div.persona-image {
   height: 700px;
+  margin-bottom: 30px;
 }
 
 div.image-wrapper > img {
