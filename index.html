@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js"></script>
+</head>
+<body>
+  <div class="side toc">
+    <a href="#introduction">1. Introduction</a>
+    <a href="#interface">2. The RIPTA Payment System</a>
+    <a href="#observations">3. My Interviews</a>
+    <a href="#personas">4. Romona and Alex</a>
+    <a href="#storyboard">5. Storyboard</a>
+  </div>
+  <div class="content">
+      <h1 id="introduction">Introduction</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores voluptatum ipsam id laborum quam eius, dicta debitis, unde et ipsum maxime voluptas eligendi, consectetur eaque labore explicabo ut minima iure?
+      </p>
+      <h1 id="interface">The RIPTA Payment System</h1>
+      <div class="image-wrapper sketch">
+        <img src="https://placekitten.com/700/500" />
+      </div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores voluptatum ipsam id laborum quam eius, dicta debitis, unde et ipsum maxime voluptas eligendi, consectetur eaque labore explicabo ut minima iure?
+      </p>
+      <h1 id="observations">My Interviews</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores voluptatum ipsam id laborum quam eius, dicta debitis, unde et ipsum maxime voluptas eligendi, consectetur eaque labore explicabo ut minima iure?
+      </p>
+      <div class="carousel">
+        <div class="interview" id="interview-1"></div>
+        <div class="interview" id="interview-2" style="display: none;"></div>
+        <div class="interview" id="interview-3" style="display: none;"></div>
+      </div>
+      <div class="buttons">
+        <button class="button" onclick="selectInterview(1)">1</button>
+        <button class="button" onclick="selectInterview(2)">2</button>
+        <button class="button" onclick="selectInterview(3)">3</button>
+      </div>
+      <h1 id="personas">Romona and Alex</h1>
+      <div class="carousel">
+        <div class="persona" id="persona-1"></div>
+        <div class="persona" id="persona-2" style="display: none;"></div>
+      </div>
+      <div class="buttons">
+        <button class="button" onclick="selectPersona(1)">Romana</button>
+        <button class="button" onclick="selectPersona(2)">Alex</button>
+      </div>
+      <h1 id="storyboard">Storyboard</h1>
+      <div class="image-wrapper storyboard">
+        <img src="https://placekitten.com/700/1000" />
+      </div>
+  </div>
+  <div class="side"></div>
+</body>
