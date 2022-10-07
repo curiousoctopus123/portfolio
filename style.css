@@ -32,7 +32,7 @@ div.toc {
 }
 
 div.content {
-  flex-grow: 1;
+  width: 680px;
   height: 100%;
   padding-left: 20px;
   overflow-y: auto;
