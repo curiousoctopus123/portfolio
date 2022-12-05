@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="./script.js"></script>
+
+    <title>Iterative Design</title>
+</head>
+
+<body>
+    <nav id="primary-nav">
+        <div id="name-container">
+            <h2 id="name">OnScale Design</h2>
+        </div>
+    </nav>
+
+    <div id="hero">
+        <h1 id="page-title">Iterative Design</h1>
+    </div>
+
+    <nav id="secondary-nav">
+        <h3 id="jump-to">Jump to:</h3>
+        <div id="section-links">
+            <a class="button-link" href="#overview">
+                <div class="section-link">
+                    <h4 class="section-link-text">0. Overview</h4>
+                </div>
+            </a>
+            <a class="button-link" href="#wireframing">
+                <div class="section-link">
+                    <h4 class="section-link-text">1. Wireframing</h4>
+                </div>
+            </a>
+            <a class="button-link" href="#mockups">
+                <div class="section-link">
+                    <h4 class="section-link-text">2. Mockups</h4>
+                </div>
+            </a>
+            <a class="button-link" href="#testing">
+                <div class="section-link">
+                    <h4 class="section-link-text">3. User Testing</h4>
+                </div>
+            </a>
+            <a class="button-link" href="#prototype">
+                <div class="section-link">
+                    <h4 class="section-link-text">4. Final Prototype</h4>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <section id="overview">
+        <div class="content-container">
+            <h2 class="section-header">Part 0: Overview</h2>
+            <p class="description">For this project, our team created a user interface for a Y-Combinator startup named
+                <a class="text-link" target="_blank" href="https://www.ycombinator.com/companies/onscale">OnScale</a>.
+                OnScale seeks to connect creators with brands so that the creators can spend more time
+                creating. With this premise in mind, our team created concepts for webpages, then wireframes for a
+                possible
+                app, and finally, a high fidelity mock up to test with real users.
+            </p>
+        </div>
+    </section>
+
+    <section id="wireframing">
+        <div class="content-container">
+            <h2 class="section-header">Part 1: Sketching and Wireframing</h2>
+            <p><a class="text-link" target="_blank" href="https://www.ycombinator.com/companies/onscale">OnScale</a> is
+                a Y-Combinator startup seeking to connect small creators to brands. We chose to make our design of
+                OnScale on a desktop application. This decision is because creators, who this app is target towards, do
+                most of their content creation such as editing, streaming, etc, on desktop computers.
+            </p>
+            <p>To kick off our redesign of the app, we each completed our own LoFi sketch based on our personal
+                understanding of OnScale to generate as many ideas as possible. In total, we ended up with four sketches
+                to work off of:</p>
+            <h3 class="section-subheader">Sketch 1:</h3>
+            <div class="carousel">
+                <div class="item first sketch" id="sketch-1-1">
+                    <img src="./Sketch Idea 1-1.jpg" alt="Sketch of Design Idea 1">
+                </div>
+                <div class="item sketch" id="sketch-1-2">
+                    <img src="./Sketch Idea 1-2.jpg" alt="Sketch of Design Idea 1">
+                </div>
+                <div class="item sketch" id="sketch-1-3">
+                    <img src="./Sketch Idea 1-3.jpg" alt="Sketch of Design Idea 1">
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" onclick="selectSketch(1, 1)">1</button>
+                <button class="button" onclick="selectSketch(1, 2)">2</button>
+                <button class="button" onclick="selectSketch(1, 3)">3</button>
+            </div>
+            <h3 class="section-subheader">Sketch 2:</h3>
+            <div class="carousel">
+                <div class="item first sketch" id="sketch-2-1">
+                    <img src="./Sketch Idea 2-1.jpg" alt="Sketch of Design Idea 2">
+                </div>
+                <div class="item sketch" id="sketch-2-2">
+                    <img src="./Sketch Idea 2-2.jpg" alt="Sketch of Design Idea 2">
+                </div>
+                <div class="item sketch" id="sketch-2-3">
+                    <img src="./Sketch Idea 2-3.jpg" alt="Sketch of Design Idea 2">
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" onclick="selectSketch(2, 1)">1</button>
+                <button class="button" onclick="selectSketch(2, 2)">2</button>
+                <button class="button" onclick="selectSketch(2, 3)">3</button>
+            </div>
+            <h3 class="section-subheader">Sketch 3:</h3>
+            <div class="carousel">
+                <div class="item first sketch" id="sketch-3-1">
+                    <img src="./Sketch Idea 3-1.jpg" alt="Sketch of Design Idea 3">
+                </div>
+                <div class="item sketch" id="sketch-3-2">
+                    <img src="./Sketch Idea 3-2.jpg" alt="Sketch of Design Idea 3">
+                </div>
+                <div class="item sketch" id="sketch-3-3">
+                    <img src="./Sketch Idea 3-3.jpg" alt="Sketch of Design Idea 3">
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" onclick="selectSketch(3, 1)">1</button>
+                <button class="button" onclick="selectSketch(3, 2)">2</button>
+                <button class="button" onclick="selectSketch(3, 3)">3</button>
+            </div>
+            <h3 class="section-subheader">Sketch 4:</h3>
+            <div class="carousel">
+                <div class="item first sketch" id="sketch-4-1">
+                    <img src="./Sketch Idea 4-1.jpg" alt="Sketch of Design Idea 4">
+                </div>
+                <div class="item sketch" id="sketch-4-2">
+                    <img src="./Sketch Idea 4-2.jpg" alt="Sketch of Design Idea 4">
+                </div>
+                <div class="item sketch" id="sketch-4-3">
+                    <img src="./Sketch Idea 4-3.jpg" alt="Sketch of Design Idea 4">
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" onclick="selectSketch(4, 1)">1</button>
+                <button class="button" onclick="selectSketch(4, 2)">2</button>
+                <button class="button" onclick="selectSketch(4, 3)">3</button>
+            </div>
+            <h3 class="section-subheader">Combined LoFi Wireframe:</h3>
+            <p>Using our ideas from the 4 different designs, we created wireframes that combined the best ideas from
+                each design.</p>
+            <iframe class="pdf" src="./Combined HiFI Prototype.pdf#navpanes=0&scrollbar=0" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <section id="mockups">
+        <div class="content-container">
+            <h2 class="section-header">Part 2: Mockups</h2>
+            <h3 class="section-subheader">Interactive HiFi Mockup</h3>
+            <p>First, we created an interactive hifi mockup of our app design using the combined lofi design. Then, we
+                presented our mockup to our class and an industry professional for critique.</p>
+            <h3 class="section-subheader">Feedback & Fixes</h3>
+            <p>We identified four main pieces of feedback from the critique. For each of these pieces, we discussed it
+                together as a group before implementing a comprehensive fix to address it:</p>
+            <div class="carousel">
+                <div class="critique item first" id="critique-1-1">
+                    <span class="number">1</span>
+                    <div>
+                        <div>
+                            <p><b>Feedback: </b>Make it clear how to go back to the previous page.</p>
+                        </div>
+                        <div>
+                            <p><b>Fix: </b>Added a breadcrumb to the top of each subpage, allowing users to easily
+                                navigate back to the main page they came from.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="critique item" id="critique-1-2">
+                    <span class="number">2</span>
+                    <div>
+                        <div>
+                            <p><b>Feedback: </b>Horizontal scrolling elements are difficult to interact with using a
+                                mouse.</p>
+                        </div>
+                        <div>
+                            <p><b>Fix: </b>Replaced them with buttons, allowing users to simply click the buttons to
+                                make the element scroll rather than having to scroll themselves.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="critique item" id="critique-1-3">
+                    <span class="number">3</span>
+                    <div>
+                        <div>
+                            <p><b>Feedback: </b>Add a partnership timeline to distinguish past from present
+                                partnerships.</p>
+                        </div>
+                        <div>
+                            <p><b>Fix: </b>Introduced a new timeline view to the partnerships section that shows when
+                                partnerships took place.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="critique item" id="critique-1-4">
+                    <span class="number">4</span>
+                    <div>
+                        <div>
+                            <p><b>Feedback: </b>Provide more information about brands, including why they are
+                                recommended to the user.</p>
+                        </div>
+                        <div>
+                            <p><b>Fix: </b>Added a TLDR for each partnered brand on the profile page and a brief
+                                explanation beneath each recommended brand.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" onclick="selectCritique(1, 1)">1</button>
+                <button class="button" onclick="selectCritique(1, 2)">2</button>
+                <button class="button" onclick="selectCritique(1, 3)">3</button>
+                <button class="button" onclick="selectCritique(1, 4)">4</button>
+            </div>
+            <p>Each fix can be easily found in our final mockups, embedded below:</p>
+            <iframe class="pdf"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fgggxh86qq1UgokV2Y2CwPP%2FIterative-Main-Sheet%3Fnode-id%3D0%253A1"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="testing">
+        <div class="content-container">
+            <h2 class="section-header">Part 3: User Testing</h2>
+            <p>With our newly improved design, we tested the design with three real users on <a
+                    href="https://www.usertesting.com/" class="text-link">usertesting.com</a>. The users experiences can
+                be viewed at the following links:</p>
+            <ol>
+                <li><a class="text-link" target="_blank"
+                        href="https://app.usertesting.com/v/7026ea18-663e-42c8-951a-26b6048ccfa1?encrypted_video_handle=eb08cdcb-f603-4cf8-a6f9-a20fdddbde74#!/notes&shared_via=link">User
+                        1 Experience</a></li>
+                <li><a class="text-link" target="_blank"
+                        href="https://app.usertesting.com/v/4ca7841f-2450-4f8b-a52b-80803dc14982?encrypted_video_handle=c35ba0d3-d98e-4970-8821-9caf0d8233f4#!/notes&shared_via=link">User
+                        2 Experience</a></li>
+                <li><a class="text-link" target="_blank"
+                        href="https://app.usertesting.com/v/21668630-86d0-4596-9105-ca13b89915bf?encrypted_video_handle=3f0bbdfc-ae31-422f-82f4-e0e1615af5c3#!/notes&shared_via=link">User
+                        3 Experience</a></li>
+            </ol>
+
+            <h3 class="section-subheader">User Testing Main Takeaways</h3>
+            <p>We had the following feedback from our three users:</p>
+            <div class="carousel">
+                <div class="critique item first" id="critique-2-1">
+                    <div class="full-width-text">
+                        <div>
+                            <p><b>User 1:</b></p>
+                            <ol>
+                                <li>Unclear horizontal scrolling mechanism.</li>
+                                <li>Unclear WHICH referral codes the graph is talking about.</li>
+                                <li>
+                                    Distinction between currently partnered vs former partners vs recommended partners
+                                    is unclear.
+                                </li>
+                                <li>
+                                    Seeing actual partnerships is a bit complicated due to the lack of
+                                    labels and logos on the partners (have a way to get to negotiations from
+                                    partnerships page).
+                                </li>
+                                <li>
+                                    Where to find initial offer unclear, reviewer expected it to be in chronological
+                                    order but it is reverse chronological, formatting is too generic/unclear. Connection
+                                    drawn between similarly styled elements that are also used in brand negotiation
+                                    listing which themselves don't have a chronological connection.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="critique item" id="critique-2-2">
+                    <div class="full-width-text">
+                        <div>
+                            <p><b>User 2:</b></p>
+                            <ol>
+                                <li>
+                                    First thing that stands out is the SquidGamer logo and the colors of the UI,
+                                    but would be nice to have a button to edit profile images/profile settings
+                                    (Settings could be added to navigation menu).
+                                </li>
+                                <li>
+                                    Doesn’t know how past/current brands are differentiated, so we should find more ways
+                                    to differentiate
+                                    current/former partnerships (fading/size?/ etc…).
+                                </li>
+                                <li>
+                                    Profile page is nice thing to use analogous to a homepage or a dashboard that shows
+                                    all of the information.
+                                </li>
+                                <li>
+                                    Horizontal scrolling rectangles might be a bit large - (maybe make two rows of
+                                    smaller rectangles and also be sure to add arrows for horizontal scrolling).
+                                </li>
+                                <li>
+                                    Confusion with where to find initial offer and why to contact OnScale on
+                                    negotiations
+                                    page, not very obvious and intuitive.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="critique item" id="critique-2-3">
+                    <div class="full-width-text">
+                        <div>
+                            <p><b>User 3:</b></p>
+                            <ol>
+                                <li>Distinguish what is viewable just to you vs. brands, unclear (Distinguish sections).
+                                </li>
+                                <li>Slide scroll is nice, always ensure that its cut off at the edge which imply side
+                                    scroll.</li>
+                                <li>Left navigational static banner is amazing.</li>
+                                <li>The information displayed in the negotiation history is good for each time segment,
+                                    except like said before, make it very clear that it is flowing nicely.</li>
+                                <li>Payments: 10-99s specific/documents maybe list those out.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" onclick="selectCritique(2, 1)">1</button>
+                <button class="button" onclick="selectCritique(2, 2)">2</button>
+                <button class="button" onclick="selectCritique(2, 3)">3</button>
+            </div>
+
+            <h3 class="section-subheader">Changes Based on User Testing</h3>
+            <p>Using the feedback from user testing, we would want to make the following changes in the future:</p>
+            <ol>
+                <!-- <li>
+                    Add an explicit scroll bar to the horizontally scrolling platform statistics, add left/right
+                    navigation
+                    arrows, and/or breadcrumbs as well.
+                </li> -->
+                <li>
+                    Graph should more explicitly show the type of referral codes being displayed (referral codes for
+                    *all* companies, referral codes for X types of products, etc…) and present buttons/filter options
+                    explicitly.
+                </li>
+                <li>
+                    Have a way of distinguishing between former/current partners(different sections, labels, OR
+                    former partners are “grayed” out) and ongoing vs. completed negotiations.
+                </li>
+                <li>
+                    Add a button to navigate directly from partners page to the negotiations page (or perhaps a “see
+                    negotiation with X partner” button for each partner).
+                </li>
+                <li>
+                    Turn the negotiation history page into a timeline-based format (current styling/format mimics the
+                    non-chronological negotiation overviews too closely).
+                </li>
+                <li>
+                    Add a settings page to edit bio and profile picture. Put the navigation link to the settings page
+                    in the sidebar under payments.
+                </li>
+                <li>
+                    Add an explanation/description to explain purpose of the Contact Onscale button on the negotiations
+                    page, and/or separate into many buttons which end up contacting OnScale anyway (“Click here for
+                    help, something doesn’t look right, etc…”).
+                </li>
+                <li>
+                    Under payments section, have an option to see specifically and list out how taxes are being
+                    calculated.
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <div id="prototype" class="subsection">
+        <h2 class="subsection-header">The Interactive Prototype</h2>
+        <p class="subsection-paragraph">Here is our final interactive prototype. Feel free to
+            click through the screens!</p>
+
+        <iframe class="pdf"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fgggxh86qq1UgokV2Y2CwPP%2FIterative-Main-Sheet%3Fpage-id%3D0%253A1%26node-id%3D1%253A2%26viewport%3D90%252C348%252C0.17%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="small-section">
+        <a class="button-link" href="#">
+            <div class="section-link">
+                <h4 class="section-link-text">Back to Top</h4>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
